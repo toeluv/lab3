@@ -1,0 +1,55 @@
+{
+  "model_settings": {
+    "step": 10,
+    "simulation_time": 0.06,
+    "show_measurements_on": "",
+    "branch_count": 5,
+    "nodes_count": 4
+  },
+  "scheme_elements": [
+    {
+      "name": "E1",
+      "type": "voltage_source",
+      "voltage": 100,
+      "phase": 0,
+      "frequency": 50,
+      "node_1": 0,
+      "node_2": 1,
+      "branch": 4
+    },
+    {
+      "name": "J1",
+      "type": "current_source",
+      "current": 10,
+      "phase": 0,
+      "frequency": 100,
+      "node_1": 0,
+      "node_2": 3,
+      "branch": 5
+    },
+    {
+      "name": "R1",
+      "type": "resistor",
+      "resistance": 10,
+      "node_1": 1,
+      "node_2": 2,
+      "branch": 1
+    },
+    {
+      "name": "R2",
+      "type": "resistor",
+      "resistance": 15,
+      "node_1": 2,
+      "node_2": 3,
+      "branch": 2
+    },
+    {
+      "name": "R3",
+      "type": "resistor",
+      "resistance": 20,
+      "node_1": 2,
+      "node_2": 0,
+      "branch": 3
+    }
+  ]
+}

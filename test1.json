@@ -1,0 +1,29 @@
+{
+  "model_settings": {
+    "step": 1,
+    "simulation_time": 0.04,
+    "show_measurements_on": "R1",
+    "branch_count": 2,
+    "nodes_count": 2
+  },
+  "scheme_elements": [
+    {
+      "name": "E1",
+      "type": "voltage_source",
+      "voltage": 100,
+      "phase": 0,
+      "frequency": 50,
+      "node_1": 0,
+      "node_2": 1,
+      "branch": 1
+    },
+    {
+      "name": "R1",
+      "type": "resistor",
+      "resistance": 10,
+      "node_1": 1,
+      "node_2": 0,
+      "branch": 2
+    }
+  ]
+}

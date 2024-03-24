@@ -1,0 +1,45 @@
+{
+  "model_settings": {
+    "step": 100,
+    "simulation_time": 0.08,
+    "show_measurements_on": "C1",
+    "branch_count": 4,
+    "nodes_count": 4
+  },
+  "scheme_elements": [
+    {
+      "name": "E1",
+      "type": "voltage_source",
+      "voltage": 100,
+      "phase": 0,
+      "frequency": 0,
+      "node_1": 0,
+      "node_2": 1,
+      "branch": 1
+    },
+    {
+      "name": "R1",
+      "type": "resistor",
+      "resistance": 10,
+      "node_1": 1,
+      "node_2": 2,
+      "branch": 2
+    },
+    {
+      "name": "C1",
+      "type": "capacitor",
+      "capacity": 10e-6,
+      "node_1": 2,
+      "node_2": 3,
+      "branch": 3
+    },
+    {
+      "name": "L1",
+      "type": "inductor",
+      "inductance": 100e-3,
+      "node_1": 3,
+      "node_2": 0,
+      "branch": 4
+    }
+  ]
+}
